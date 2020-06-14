@@ -1,0 +1,28 @@
+<div>
+
+</div>
+
+<div class="container">
+   
+    <div class="row justify-content-center">
+        <table class="table table-light">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Turno</th>
+                    <th>Asistencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cita of citaList">
+                    <td>#{{cita.idCita}}</td>
+                    <td>{{cita.fecha}}</td>
+                    <td>{{cita.turno}}</td>
+                    <td>{{cita.asistencia}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+  </div>
